@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Increased width */
+    max-width: 800px; /* Increased max-width */
+    text-align: center;
+    position: relative;
+    margin: 40px;
+  }
+  
+  /* Cute Header */
+  .cute-header h1 {
+    font-size: 36px;
+    color: #76c7c0; /* Default color */
+    margin-bottom: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease; /* Smooth transition for theme color */
+  }
+  
+  /* Theme Color Picker */
+  .color-picker {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .color-picker input[type="color"] {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+  }
+  
+  .color-picker input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+  
+  .color-picker input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #76c7c0; /* Default color */
+    transition: color 0.3s ease; /* Smooth transition for theme color */
+  }
+  
+  /* Progress Bar */
+  .progress-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+  
+  #progress-bar {
+    height: 10px;
+    background-color: #76c7c0; /* Default color */
+    width: 0%;
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Task Input and Add Button */
+  .input-container {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  #task-input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    transition: border-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme color */
+  }
+  
+  #task-input:focus {
+    border-color: #76c7c0; /* Default color */
+    outline: none;
+  }
+  
+  #add-task-btn {
+    padding: 15px 20px;
+    background-color: #76c7c0; /* Default color */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #add-task-btn:hover {
+    background-color: #5aa8a2; /* Darker shade for hover */
+  }
+  
+  /* Task List */
+  #task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme color */
+    font-size: 18px;
+    color: #555; /* Default text color */
+  }
+  
+  .task-item.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .task-item:hover .delete-btn {
+    opacity: 1;
+  }
+  
+  .delete-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #ff5252;
+  }
